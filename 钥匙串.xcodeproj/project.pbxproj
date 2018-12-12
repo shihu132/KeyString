@@ -18,6 +18,7 @@
 		488812D321BE3DE900840A60 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 488812D221BE3DE900840A60 /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		488813C321C0AABD00840A60 /* SHTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488813C221C0AABD00840A60 /* SHTestViewController.m */; };
 		488813C621C0AD3700840A60 /* SHTestTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488813C521C0AD3700840A60 /* SHTestTwoViewController.m */; };
+		488813C921C0E8AE00840A60 /* SHThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488813C821C0E8AE00840A60 /* SHThreeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		488813C221C0AABD00840A60 /* SHTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHTestViewController.m; sourceTree = "<group>"; };
 		488813C421C0AD3700840A60 /* SHTestTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHTestTwoViewController.h; sourceTree = "<group>"; };
 		488813C521C0AD3700840A60 /* SHTestTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHTestTwoViewController.m; sourceTree = "<group>"; };
+		488813C721C0E8AE00840A60 /* SHThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHThreeViewController.h; sourceTree = "<group>"; };
+		488813C821C0E8AE00840A60 /* SHThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHThreeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				488813C221C0AABD00840A60 /* SHTestViewController.m */,
 				488813C421C0AD3700840A60 /* SHTestTwoViewController.h */,
 				488813C521C0AD3700840A60 /* SHTestTwoViewController.m */,
+				488813C721C0E8AE00840A60 /* SHThreeViewController.h */,
+				488813C821C0E8AE00840A60 /* SHThreeViewController.m */,
 				488812A521BE3DDB00840A60 /* Main.storyboard */,
 				488812A821BE3DDC00840A60 /* Assets.xcassets */,
 				488812AA21BE3DDC00840A60 /* LaunchScreen.storyboard */,
@@ -277,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				488813C921C0E8AE00840A60 /* SHThreeViewController.m in Sources */,
 				488813C621C0AD3700840A60 /* SHTestTwoViewController.m in Sources */,
 				488812D321BE3DE900840A60 /* KeychainItemWrapper.m in Sources */,
 				488813C321C0AABD00840A60 /* SHTestViewController.m in Sources */,
