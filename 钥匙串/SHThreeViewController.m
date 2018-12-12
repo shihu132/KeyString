@@ -26,8 +26,13 @@
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+     NSLog(@"33333333333333333333");
 }
 
+- (void)dealloc
+{
+    NSLog(@"dealloc == %@",self);
+}
 
 
 @end
