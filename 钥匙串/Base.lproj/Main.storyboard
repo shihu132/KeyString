@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,63 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mku-73-oIJ">
+                                <rect key="frame" x="100" y="171" width="175" height="44"/>
+                                <color key="backgroundColor" red="0.1058823529" green="0.61568627450000002" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="SvR-iq-hej"/>
+                                </constraints>
+                                <state key="normal" title="读取"/>
+                                <connections>
+                                    <action selector="keychainRead:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H0O-nc-sjd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbj-IG-fUu">
+                                <rect key="frame" x="100" y="275" width="175" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.1482317729" blue="0.25639678560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="dso-ah-CQ2"/>
+                                </constraints>
+                                <state key="normal" title="存储"/>
+                                <connections>
+                                    <action selector="clickJieM:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yaV-vz-rAi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6F-iF-7Hd">
+                                <rect key="frame" x="100" y="383" width="175" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="yfw-u6-xgc"/>
+                                </constraints>
+                                <state key="normal" title="存储2"/>
+                                <connections>
+                                    <action selector="clickJieM2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0MB-k1-KpN"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xbj-IG-fUu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="55g-8x-yJS"/>
+                            <constraint firstItem="t6F-iF-7Hd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Iqb-DZ-6cm"/>
+                            <constraint firstItem="t6F-iF-7Hd" firstAttribute="top" secondItem="xbj-IG-fUu" secondAttribute="bottom" constant="64" id="JxN-Zc-9Ri"/>
+                            <constraint firstItem="xbj-IG-fUu" firstAttribute="top" secondItem="mku-73-oIJ" secondAttribute="bottom" constant="60" id="Kse-9O-0dz"/>
+                            <constraint firstItem="mku-73-oIJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="151" id="jMa-cs-4s1"/>
+                            <constraint firstItem="mku-73-oIJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="ln1-Hi-HUH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mku-73-oIJ" secondAttribute="trailing" constant="100" id="oKI-Yx-bgy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xbj-IG-fUu" secondAttribute="trailing" constant="100" id="rsa-Wr-cEg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t6F-iF-7Hd" secondAttribute="trailing" constant="100" id="yyl-Kp-dPj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

@@ -15,6 +15,7 @@
 		488812AF21BE3DDC00840A60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 488812AE21BE3DDC00840A60 /* main.m */; };
 		488812B921BE3DDC00840A60 /* ___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 488812B821BE3DDC00840A60 /* ___Tests.m */; };
 		488812C421BE3DDC00840A60 /* ___UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 488812C321BE3DDC00840A60 /* ___UITests.m */; };
+		488812D321BE3DE900840A60 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 488812D221BE3DE900840A60 /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		488812BF21BE3DDC00840A60 /* 钥匙串UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "钥匙串UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		488812C321BE3DDC00840A60 /* ___UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___UITests.m"; sourceTree = "<group>"; };
 		488812C521BE3DDC00840A60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		488812D121BE3DE900840A60 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		488812D221BE3DE900840A60 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		4888129E21BE3DDB00840A60 /* 钥匙串 */ = {
 			isa = PBXGroup;
 			children = (
+				488812D121BE3DE900840A60 /* KeychainItemWrapper.h */,
+				488812D221BE3DE900840A60 /* KeychainItemWrapper.m */,
 				4888129F21BE3DDB00840A60 /* AppDelegate.h */,
 				488812A021BE3DDB00840A60 /* AppDelegate.m */,
 				488812A221BE3DDB00840A60 /* ViewController.h */,
@@ -262,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				488812D321BE3DE900840A60 /* KeychainItemWrapper.m in Sources */,
 				488812A421BE3DDB00840A60 /* ViewController.m in Sources */,
 				488812AF21BE3DDC00840A60 /* main.m in Sources */,
 				488812A121BE3DDB00840A60 /* AppDelegate.m in Sources */,
