@@ -16,7 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+  
+    self.view.backgroundColor = [UIColor redColor];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -33,6 +34,7 @@
 {
     NSLog(@"dealloc == %@",self);
 }
+
 
 
 @end
